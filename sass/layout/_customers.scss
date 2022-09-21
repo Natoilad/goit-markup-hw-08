@@ -1,0 +1,48 @@
+.customers {
+    text-align: center;
+}
+
+.customers-list {
+    display: flex;
+    gap: 30px;
+}
+
+.customers-list-item {
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.customers-icon {
+    @extend%flex-just;
+    align-items: center;
+    fill: #afb1b8;
+    transition: fill var(--transition-dur-fun);
+
+    .customer-link-icon:hover &,
+    .customer-link-icon:focus & {
+        fill: var(--brend-color);
+    }
+}
+
+.customers-icon-border {
+    width: 106px;
+    height: 60px;
+}
+
+.customer-link-icon {
+    @extend%flex-just;
+    align-items: center;
+    box-sizing: border-box;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border var(--transition-dur-fun);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--brend-color);
+    }
+}
+
