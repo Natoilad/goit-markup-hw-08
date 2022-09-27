@@ -22,7 +22,7 @@
   <body>
     <!-- header -->
     <header class="studio-header">
-      <div class="container">
+      <div class="container page-header__conteiner">
         <nav class="menu-nav">
           <a class="logo-up link" href="./index.html">
             <span class="logo__part-color">Web</span>Studio</a
@@ -59,6 +59,65 @@
             >
           </li>
         </ul>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link current link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-list-contact list">
+            <li class="mobile-list-contact__item">
+              <a
+                class="mobile-list-contact__link-phone link"
+                href="tel+380961111111"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-list-contact__item">
+              <a
+                class="mobile-list-contact__link-mail link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social-list list">
+            <li class="mobile-social__item">
+              <a class="mobile-social__link current link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link current link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link current link" href="#">facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link current link" href="#">Linkedin</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -210,7 +269,9 @@
                   </p>
                 </div>
                 <div class="card">
-                  <h3 class="project-list__title">Inspiration has no Borders</h3>
+                  <h3 class="project-list__title">
+                    Inspiration has no Borders
+                  </h3>
                   <p class="project-item__paragraph">Веб-сайт</p>
                 </div>
               </a>
@@ -388,5 +449,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

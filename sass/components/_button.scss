@@ -16,6 +16,7 @@
     @extend%flex-just;
     gap: 8px;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .button-nav__link {
@@ -30,15 +31,15 @@
     letter-spacing: 0.03em;
     color: #212121;
     transition: background-color var(--transition-dur-fun),
-    color var(--transition-dur-fun), box-shadow var(--transition-dur-fun);
+        color var(--transition-dur-fun), box-shadow var(--transition-dur-fun);
 
     &:hover,
     &:focus {
-    background-color: var(--brend-color);
-    color: var(--color-text-dark-theme);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+        background-color: var(--brend-color);
+        color: var(--color-text-dark-theme);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
     }
 }
 
@@ -55,6 +56,8 @@
     line-height: 1.88;
     display: flex;
     letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .modal__btn-send {
@@ -68,6 +71,7 @@
     border-radius: 4px;
     border-color: transparent;
 }
+
 .button-active {
     background-color: var(--brend-color);
     color: var(--color-text-dark-theme);
@@ -75,7 +79,7 @@
 
     &:hover,
     &:focus {
-    background: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 }

@@ -17,12 +17,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- header -->
     <header class="studio-header">
-      <div class="container">
+      <div class="container page-header__conteiner">
         <nav class="menu-nav">
           <a class="logo-up link" href="./index.html">
             <span class="logo__part-color">Web</span>Studio</a
@@ -59,6 +59,65 @@
             >
           </li>
         </ul>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link current link" href=".index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-list-contact list">
+            <li class="mobile-list-contact__item">
+              <a
+                class="mobile-list-contact__link-phone link"
+                href="tel+380961111111"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-list-contact__item">
+              <a
+                class="mobile-list-contact__link-mail link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social-list list">
+            <li class="mobile-social__item">
+              <a class="mobile-social__link current link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link current link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link current link" href="#">facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link current link" href="#">Linkedin</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -68,7 +127,7 @@
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button
             type="button"
-            class="button-active hero-btn button "
+            class="button-active hero-btn button"
             data-modal-open
           >
             Замовити послугу
@@ -147,7 +206,7 @@
         </div>
       </section>
       <!-- prezents -->
-      <section class="prezents section">
+      <!-- <section class="prezents section">
         <div class="container">
           <h2 class="prezents_title">Чим ми займаємося</h2>
           <ul class="prezents-list list">
@@ -195,7 +254,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- team -->
       <section class="team section">
         <div class="container">
@@ -640,7 +699,7 @@
       </div>
     </footer>
     <!-- form -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <form class="modal">
         <button type="button" class="modal__btn-close" data-modal-close>
           <svg class="modal__close-icon" width="18px" height="18px">
@@ -728,6 +787,7 @@
         </div>
       </form>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

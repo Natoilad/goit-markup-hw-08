@@ -2,15 +2,23 @@
     background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: block;
 
-    .container {
-    display: flex;
-    align-items: baseline;
+    @include desktop {
+        .container {
+            display: flex;
+            align-items: baseline;
+        }
     }
 }
 
 .footer-address {
-    width: 231px;
+    text-align: center;
+
+    @include desktop {
+        width: 231px;
+    }
+
 }
 
 .address {
@@ -32,8 +40,8 @@
 
     &:hover,
     &:focus {
-    color: var(--brend-color); 
-   }
+        color: var(--brend-color);
+    }
 }
 
 .address__item:not(:last-child) {
@@ -41,6 +49,9 @@
 }
 
 .footer-form {
-    display: flex;
-    width: 100%;
+    @include desktop {
+        display: flex;
+        width: 100%;
+    }
+
 }

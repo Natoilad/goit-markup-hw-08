@@ -1,8 +1,15 @@
 .follow {
     align-items: center;
     justify-content: center;
-    margin-left: 70px;
-    margin-right: 93px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    @include desktop {
+        margin-left: 70px;
+        margin-right: 93px;
+    }
+
 }
 
 .follow__icon-title {
@@ -24,6 +31,6 @@
 
     &:hover,
     &:focus {
-    background-color: var(--brend-color);
+        background-color: var(--brend-color);
     }
 }
