@@ -21,9 +21,12 @@
   .card {
     padding: 20px 24px;
     background-color: #fff;
-    // border-right: 1px solid #eeeeee;
-    // border-bottom: 1px solid #eeeeee;
-    // border-left: 1px solid #eeeeee;
+   
+    // @include desktop {
+    //   border-right: 1px solid #eeeeee;
+    //   border-bottom: 1px solid #eeeeee;
+    //   border-left: 1px solid #eeeeee;
+    // }
   }
 }
 
@@ -81,7 +84,7 @@
   line-height: 1.56;
   color: var(--color-text-dark-theme);
   overflow: auto;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--transition-dur-fun);
 
   .project-list__card:hover &,

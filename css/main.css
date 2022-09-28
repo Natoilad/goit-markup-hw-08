@@ -193,11 +193,13 @@ body {
 .button-nav {
   gap: 8px;
   margin-bottom: 50px;
+  margin-right: 11px;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 @media screen and (min-width: 768px) {
   .button-nav {
+    margin-right: 0;
     justify-content: center;
   }
 }
@@ -410,7 +412,7 @@ body {
 }
 
 .modal {
-  width: 528px;
+  width: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -418,7 +420,19 @@ body {
   background-color: var(--color-text-dark-theme);
   padding: 40px;
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .modal__btn-close {
   position: absolute;
   top: 8px;
@@ -523,15 +537,21 @@ textarea {
 }
 
 .polity {
+  text-align: left;
   align-items: center;
   font-family: "Roboto";
   font-style: normal;
   margin-bottom: 30px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .polity {
+    font-size: 14px;
+  }
 }
 
 .checkbox-title {
@@ -1212,7 +1232,7 @@ textarea {
   line-height: 1.56;
   color: var(--color-text-dark-theme);
   overflow: auto;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--transition-dur-fun);
 }
 .project-list__card:hover .overlay, .project-list__card:focus .overlay {
