@@ -5,6 +5,9 @@
     margin-top: 60px;
     margin-bottom: 60px;
 
+    @include tablet {
+        margin-top: 0;
+    }
     @include desktop {
         margin-left: 70px;
         margin-right: 93px;

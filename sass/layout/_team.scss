@@ -19,7 +19,7 @@
     border-radius: 0px 0px 4px 4px;
 
     @include tablet {
-        width: 270px;
+        width: calc(100% - 30px) / 2;
     }
 }
 

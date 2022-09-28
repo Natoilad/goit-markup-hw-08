@@ -194,6 +194,12 @@ body {
   gap: 8px;
   margin-bottom: 50px;
   flex-wrap: wrap;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .button-nav {
+    justify-content: center;
+  }
 }
 
 .button-nav__link {
@@ -294,6 +300,11 @@ body {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .follow {
+    margin-top: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .follow {
     margin-left: 70px;
@@ -324,6 +335,11 @@ body {
 
 .mail-form {
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .mail-form {
+    text-align: start;
+  }
 }
 
 .mail-form__title {
@@ -358,6 +374,11 @@ body {
 }
 .footer-form__enter-mail:focus-within {
   border-color: var(--brend-color);
+}
+@media screen and (min-width: 768px) {
+  .footer-form__enter-mail {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__enter-mail {
@@ -720,6 +741,57 @@ textarea {
     display: block;
   }
 }
+@media screen and (min-width: 1200px) {
+  .list-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-contact__item {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-contact__item {
+    margin-bottom: 0;
+  }
+}
+
+.list-contact-link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+}
+@media screen and (min-width: 768px) {
+  .list-contact-link {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-contact-link {
+    font-size: 14px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color var(--transition-dur-fun);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contact-phone,
+.header-contact-mail {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
 .open-mobile-menu-btn {
   border: none;
   background-color: transparent;
@@ -813,11 +885,21 @@ textarea {
 .technology {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .technology {
+    text-align: start;
+  }
+}
 
 .technology-list {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .technology-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .technology__icon {
@@ -917,7 +999,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .team-list__item {
-    width: 270px;
+    width: calc(100% - 30px)/2;
   }
 }
 
@@ -962,11 +1044,21 @@ textarea {
   gap: 30px;
   flex-wrap: wrap;
 }
+@media screen and (min-width: 1200px) {
+  .customers-list {
+    flex-wrap: nowrap;
+  }
+}
 
 .customers-list-item {
   box-sizing: border-box;
   background-color: #fff;
   width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .customers-list-item {
+    width: calc((100% - 30px) / 3);
+  }
 }
 
 .customers-icon {
@@ -1014,7 +1106,6 @@ textarea {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  flex-direction: column;
 }
 .project-list .card {
   padding: 20px 24px;
@@ -1027,6 +1118,16 @@ textarea {
 .project-list__item {
   box-sizing: border-box;
   width: 370px;
+}
+@media screen and (min-width: 768px) {
+  .project-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-list__item {
+    width: 370px;
+  }
 }
 
 .project-list__title {
@@ -1076,10 +1177,20 @@ textarea {
   padding-bottom: 60px;
   display: block;
 }
+@media screen and (min-width: 768px) {
+  .studio-footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    column-gap: 165px;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .studio-footer .container {
     display: flex;
     align-items: baseline;
+    column-gap: normal;
   }
 }
 

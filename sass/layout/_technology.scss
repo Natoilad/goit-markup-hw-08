@@ -1,11 +1,17 @@
 .technology {
   text-align: center;
+  @include tablet {
+    text-align: start;
+  }
 }
 
 .technology-list {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  @include desktop {
+    flex-wrap: nowrap;
+  }
 }
 
 
