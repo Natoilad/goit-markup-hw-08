@@ -74,7 +74,9 @@
           </button>
           <ul class="mobile-menu-list list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link current link" href=".index.html">Студія</a>
+              <a class="mobile-menu__link current link" href=".index.html"
+                >Студія</a
+              >
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link link" href="./portfolio.html"
@@ -206,12 +208,27 @@
         </div>
       </section>
       <!-- prezents -->
-      <!-- <section class="prezents section">
+      <section class="prezents section">
         <div class="container">
           <h2 class="prezents_title">Чим ми займаємося</h2>
           <ul class="prezents-list list">
             <li class="prezents-list__item">
               <div class="prezents__position">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team-desktop/ihor-desktop.webp    1x,
+                      ./images/team-desktop/ihor-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-desktop/ihor-desktop.jpg    1x,
+                      ./images/team-desktop/ihor-desktop@2x.jpg 2x
+                    "
+                  />
+                </picture>
                 <img
                   class="prezents-list__img"
                   src="./images/about-1.jpg"
@@ -254,20 +271,66 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- team -->
       <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/team/team-1.jpg"
-                alt="Ігор Дем'яненко проджект менеджер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-desktop/ihor-desktop.webp    1x,
+                    ./images/team-desktop/ihor-desktop@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-desktop/ihor-desktop.jpg    1x,
+                    ./images/team-desktop/ihor-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile/ihor-mobile.webp    1x,
+                    ./images/team-mobile/ihor-mobile@2x.webp 2x
+                  "
+                  media="(max-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile/ihor-mobile.jpg    1x,
+                    ./images/team-mobile/ihor-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet/ihor-tablet.webp    1x,
+                    ./images/team-tablet/ihor-tablet@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet/ihor-tablet.jpg    1x,
+                    ./images/team-tablet/ihor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <img
+                  class="team-list__img"
+                  src="./images/team/ihor-mobile.jpg"
+                  alt="Ігор Дем'яненко проджект менеджер"
+                />
+              </picture>
               <div class="card">
                 <h3 class="team__title-name">Ігор Дем'яненко</h3>
                 <p class="team__paragraph">Product Designer</p>
@@ -320,13 +383,60 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/team/team-2.jpg"
-                alt="Ольга Рєпіна розробник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-desktop/olha-desktop.webp    1x,
+                    ./images/team-desktop/olha-desktop@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-desktop/olha-desktop.jpg    1x,
+                    ./images/team-desktop/olha-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile/olha-mobile.webp    1x,
+                    ./images/team-mobile/olha-mobile@2x.webp 2x
+                  "
+                  media="(max-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile/olha-mobile.jpg    1x,
+                    ./images/team-mobile/olha-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet/olha-tablet.webp    1x,
+                    ./images/team-tablet/olha-tablet@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet/olha-tablet.jpg    1x,
+                    ./images/team-tablet/olha-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <img
+                  class="team-list__img"
+                  src="./images/team-mobile/olha-mobile.jpg"
+                  alt="Ольга Рєпіна розробник"
+                />
+              </picture>
+
               <div class="card">
                 <h3 class="team__title-name">Ольга Рєпіна</h3>
                 <p class="team__paragraph">Frontend Developer</p>
@@ -379,13 +489,60 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/team/team-3.jpg"
-                alt="Микола Тарасов маркетолог"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-desktop/mukola-desktop.webp    1x,
+                    ./images/team-desktop/mukola-desktop@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-desktop/mukola-desktop.jpg    1x,
+                    ./images/team-desktop/mukola-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile/mukola-mobile.webp    1x,
+                    ./images/team-mobile/mukola-mobile@2x.webp 2x
+                  "
+                  media="(max-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile/mukola-mobile.jpg    1x,
+                    ./images/team-mobile/mukola-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet/mukola-tablet.webp    1x,
+                    ./images/team-tablet/mukola-tablet@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet/mukola-tablet.jpg    1x,
+                    ./images/team-tablet/mukola-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <img
+                  class="team-list__img"
+                  src="./images/team-mobile/mukola-mobile.jpg"
+                  alt="Микола Тарасов маркетолог"
+                />
+              </picture>
+
               <div class="card">
                 <h3 class="team__title-name">Микола Тарасов</h3>
                 <p class="team__paragraph">Marketing</p>
@@ -438,13 +595,60 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/team/team-4.jpg"
-                alt="Михайло Єрмаков дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-desktop/mukhailo-desktop.webp    1x,
+                    ./images/team-desktop/mukhailo-desktop@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-desktop/mukhailo-desktop.jpg    1x,
+                    ./images/team-desktop/mukhailo-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile/mukhailo-mobile.webp    1x,
+                    ./images/team-mobile/mukhailo-mobile@2x.webp 2x
+                  "
+                  media="(max-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-mobile/mukhailo-mobile.jpg    1x,
+                    ./images/team-mobile/mukhailo-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet/mukhailo-tablet.webp    1x,
+                    ./images/team-tablet/mukhailo-tablet@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team-tablet/mukhailo-tablet.jpg    1x,
+                    ./images/team-tablet/mukhailo-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <img
+                  class="team-list__img"
+                  src="./images/team-mobile/mukhailo-mobile.jpg"
+                  alt="Михайло Єрмаков дизайнер"
+                />
+              </picture>
+
               <div class="card">
                 <h3 class="team__title-name">Михайло Єрмаков</h3>
                 <p class="team__paragraph">UI Designer</p>

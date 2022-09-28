@@ -13,6 +13,10 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
+  @include tablet {
+    justify-content: flex-start;
+  }
 
   .card {
     padding: 20px 24px;
@@ -36,7 +40,7 @@
   }
 }
 .project-list__img {
-  width: 450px;
+  width: 100%;
   @include tablet {
     max-width: 354px;
   }

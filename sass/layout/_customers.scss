@@ -6,6 +6,7 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
   @include desktop {
     flex-wrap: nowrap;
   }
@@ -16,7 +17,7 @@
   background-color: #fff;
   width: calc((100% - 30px) / 2);
   @include tablet {
-    width: calc((100% - 30px) / 3);
+    width: 226px;
   }
 }
 
