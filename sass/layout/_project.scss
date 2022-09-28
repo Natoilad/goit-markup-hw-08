@@ -17,20 +17,31 @@
   .card {
     padding: 20px 24px;
     background-color: #fff;
-    border-right: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee;
+    // border-right: 1px solid #eeeeee;
+    // border-bottom: 1px solid #eeeeee;
+    // border-left: 1px solid #eeeeee;
   }
 }
 
 .project-list__item {
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
   box-sizing: border-box;
-  width: 370px;
   @include tablet {
     width: calc((100% - 30px) / 2);
   }
   @include desktop {
     width: 370px;
+  }
+}
+.project-list__img {
+  width: 450px;
+  @include tablet {
+    max-width: 354px;
+  }
+  @include desktop {
+    max-width: 370px;
   }
 }
 

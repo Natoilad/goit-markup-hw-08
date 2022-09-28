@@ -1110,14 +1110,13 @@ textarea {
 .project-list .card {
   padding: 20px 24px;
   background-color: #fff;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
 }
 
 .project-list__item {
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
   box-sizing: border-box;
-  width: 370px;
 }
 @media screen and (min-width: 768px) {
   .project-list__item {
@@ -1127,6 +1126,20 @@ textarea {
 @media screen and (min-width: 1200px) {
   .project-list__item {
     width: 370px;
+  }
+}
+
+.project-list__img {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .project-list__img {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-list__img {
+    max-width: 370px;
   }
 }
 
