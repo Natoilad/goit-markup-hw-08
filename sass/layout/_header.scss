@@ -1,8 +1,10 @@
 .studio-header {
+  border: 1px solid #ececec;
   padding-top: 10px;
   padding-bottom: 16px;
   @include tablet {
-    border: 1px solid #ececec;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   @include tablet {

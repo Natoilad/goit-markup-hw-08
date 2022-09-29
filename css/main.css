@@ -305,6 +305,7 @@ body {
 @media screen and (min-width: 768px) {
   .follow {
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -386,6 +387,7 @@ body {
   .footer-form__enter-mail {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -677,6 +679,11 @@ textarea {
   color: var(--brend-color);
 }
 
+@media screen and (max-width: 360px) {
+  .mobile-list-contact__link-phone {
+    font-size: 26px;
+  }
+}
 .mobile-list-contact__link-mail {
   font-weight: 500;
   font-size: 24px;
@@ -688,6 +695,7 @@ textarea {
 .mobile-social-list {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .mobile-social__item:not(:last-child) {
@@ -705,12 +713,14 @@ textarea {
 }
 
 .studio-header {
+  border: 1px solid #ececec;
   padding-top: 10px;
   padding-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .studio-header {
-    border: 1px solid #ececec;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1268,6 +1278,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .footer-address {
     width: 231px;
+    text-align: left;
   }
 }
 
