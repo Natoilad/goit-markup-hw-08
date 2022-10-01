@@ -14,8 +14,6 @@
   }
 }
 
-
-
 .technology__icon {
   @extend%flex-just;
   align-items: center;
@@ -25,7 +23,6 @@
   margin-bottom: 30px;
   width: 100%;
   height: 120px;
-
 }
 
 .technology__icon-pick {
@@ -39,8 +36,6 @@
   @include tablet {
     width: 354px;
   }
-
-
 }
 
 .technology__title {
